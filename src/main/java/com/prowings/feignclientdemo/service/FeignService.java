@@ -9,9 +9,9 @@ public class FeignService {
 	@Autowired
 	FeignApiClient apiClient;
 
-	public String hello() {
+	public String product() {
 		
-		return apiClient.getHello();
+		return apiClient.getProduct();
 		
 	}
 	

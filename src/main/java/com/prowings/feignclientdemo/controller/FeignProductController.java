@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.prowings.feignclientdemo.service.FeignService;
 
 @RestController
-public class FeignHelloController {
+public class FeignProductController {
 	
 	@Autowired
 	FeignService feignService;
 
-	@GetMapping("/helloFeign")
-	public String helloFeign()
+	@GetMapping("/productFeign")
+	public String ProductFeign()
 	{
-		return feignService.hello();
+		return feignService.product();
 	}
 }
